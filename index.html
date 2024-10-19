@@ -10,6 +10,11 @@
 <body>
     <header>
         <div class="logo">#BeActive</div>
+        <div class="hamburger" id="hamburger">
+            <span>Inicio</span>
+            <span>Planes</span>
+            <span>Regístrate</span>
+        </div>
         <nav>
             <ul class="nav-list">
                 <li><a href="#">Inicio</a></li>
@@ -61,5 +66,15 @@
     <footer>
         <p>© 2024 Gym. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.getElementById('nav-list');
+
+        hamburger.addEventListener('click', () => {
+        navList.classList.toggle('show');
+
+    });
+    </script>
 </body>
 </html>
