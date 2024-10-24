@@ -5,6 +5,7 @@
 }
 
 body {
+    background-image: linear-gradient(to  right , #ffffff, #052830);
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #000;
@@ -177,9 +178,9 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     padding: 60px 0;
-    background-color: #f4f4f4;
+    background-image: linear-gradient(to  right , #ffffff, #052830);
     font-size: 25px;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 
 .feature {
