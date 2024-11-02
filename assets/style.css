@@ -72,6 +72,8 @@ nav {
 
 .dropdown-menu li {
     border-top: 1px solid #333;
+    z-index: 5;
+    background-color: #000;
 }
 
 .dropdown-menu li a {
@@ -164,16 +166,6 @@ nav ul li a {
     width: 150px;
 }
 
-.join-button {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    padding: 10px 20px 10px;
-    margin-top: 400px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 .features {
     display: flex;
     justify-content: space-around;
@@ -211,8 +203,6 @@ nav ul li a {
 
 button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
     padding: 10px;
@@ -221,12 +211,31 @@ button {
     border-radius: 5px;
 }
 
+
+.join-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
 .prev {
     left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .next {
     right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .p1 {
