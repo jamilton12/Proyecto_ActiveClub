@@ -1,10 +1,17 @@
 
 // Menú hamburguesa
 const hamburger = document.getElementById('hamburger');
-const navList = document.getElementById('nav-list');
+const hamburgerMenu = document.querySelector('.hamburger-container')
 
+let isActive = false
 hamburger.addEventListener('click', () => {
-navList.classList.toggle('show');
+    if (isActive) {
+        hamburgerMenu.classList.remove('show')
+        isActive = false        
+    }else {
+        hamburgerMenu.classList.add('show')
+        isActive = true
+    }
 })
 
 let index = 0;
